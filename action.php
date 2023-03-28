@@ -183,7 +183,7 @@ class action_plugin_tocselect extends DokuWiki_Action_Plugin {
         if(empty($namespace))
               $title = 'Root NS';
          else  $title = $namespace;
-        $png = '<img title = "' . $title. '"src = "' . TOCSEL_IMGDIR.'up.png' . '" />';
+        //$png = '<img title = "' . $title. '"src = "' . TOCSEL_IMGDIR.'up.png' . '" />';
          return "<li class= 'tocsel_up'><span  class='clicker  tocselb' onclick=\"tocsel_updatetoc('$namespace:*');\">$png</span></li>  ";
     }
     
